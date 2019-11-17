@@ -1,0 +1,79 @@
+<section class="contato">
+    <div class="center">
+    <div class="flex">
+        <div class="contato">
+            
+            <div class="box-titulo">
+                    <h2>Entre em contato</h2>
+            </div>
+            <div class="box-titulo">
+                    <h1>Onde nos achar</h1>
+            </div>
+            <div class="box-texto">
+                <p>Barão de Castro Lima,08 </p>
+                <p>Real Parque</p>
+                <p>São Paulo - SP</p>
+                <p>05685-040</p>
+            </div>
+            <div class="box-texto">
+                <p>(11) 5124-2147</p>
+                <p>(11) 5124-2147</p>
+            </div>
+            <div class="box-texto">
+                <span>contato@minutonews.com</span>
+            </div>
+            <div class="box-texto">
+                <span>Aberto de Segunda a Sexta das 09H as 19H</span>
+            </div>
+       
+        </div>
+        <div class="enviar-msg">
+                <div class="titulo">
+                    <h2>Mande uma Mensagem</h2>
+                </div>
+                <form [formGroup]='profileForm' >
+                    <div class="input">
+                    <label>Seu Nome:</label>
+                    <input  type="text" name="nome"  formControlName="nome" (click)="a()">
+              
+                    <div class="input-erro"   *ngIf="nome().invalid && nome().touched">
+                        Nome invalido
+                    </div>
+                    
+                     
+                </div>
+                <div class="input">
+                        <label>Email:</label>
+                        <input type="text" formControlName="email" required email name ="email" >
+                        <div class="input-erro"    *ngIf="email().invalid && email().touched">
+                                Insira um email valido
+                              
+                            </div>
+                          
+                    </div>
+                    <div class="input">
+                            <label>Mensagem:</label>
+                            <textarea type="text" required minlength="5" formControlName="mensagem"></textarea>
+                            <div class="input-erro"   *ngIf="mensagem().invalid && mensagem().touched">
+                                        
+                                        <p>Campo Obrigatorio</p>
+                                        <span *ngIf="mensagem().value.length < 5 && mensagem().value.length>0">
+                                                sua mensagem é muito pequena</span>
+                                        
+                                </div>
+                                <div *ngIf="mensagem().valid" >
+                                    <span *ngIf="mensagem().value.length < 5">
+                                        sua mensagem é muito pequena</span>
+                                </div>
+                                
+                    </div>
+                    <div class="input-submit">
+                           
+                            <input type="submit" [disabled]="!profileForm.valid">
+                    </div>
+                </form>
+            
+            </div>
+        </div>        
+    </div>    
+</section>

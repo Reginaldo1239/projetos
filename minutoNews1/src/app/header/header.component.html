@@ -1,0 +1,39 @@
+
+<header>
+    <div class="center">
+        <div class="flex">
+            <div class="logo">
+                <span>Minuto News </span>
+            </div>
+          
+            <div class="menu-desktop">
+                    <nav>
+                        <ul>
+                            <li><a>Inicio</a></li>
+                            <li><a>Brasil</a></li>
+                            <li><a>Mundo</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Assine</a></li>
+                        </ul>   
+                    </nav>
+                </div> 
+                        <div class="ico" (click)="mostrarMenuMobile()" >
+                                <div class="linha"></div>
+                                <div class="linha"></div>
+                                <div class="linha"></div>
+                            </div>
+                        
+        </div><!--flex-->
+    </div><!--center-->
+    <div class="menu-mobile"  [ngClass]="MenuEstaVisivel ?'menu-mobile-show':'menu-mobile-hidden'" >
+            <nav>
+                <ul>
+                    <li><a>Inicio</a></li>
+                    <li><a>Brasil</a></li>
+                    <li><a>Mundo</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Assine</a></li>
+                </ul>   
+            </nav>
+        </div> 
+<header>

@@ -1,0 +1,31 @@
+
+    <section class="box-editoriais ">
+       <div class="center flex"> 
+         
+        <div class="box-editorial" *ngFor="let servico  of services ">
+                            <div class="flex">
+                                <div class="data-de-publicacao">
+                                    <span> {{servico.noticias[0].data}}</span>
+                                            </div>  
+                                                <div  class="editoria">
+                                                    <span>{{servico.Editoria}}</span>
+                                                    </div>
+                                                            <div class="box-img">
+                                                                <img [src]="pathImgs+servico.noticias[1].Foto">
+                                                                            </div><!--box-img-->    
+                                                                                    <div class="box-texto">
+                                                                                    <h2>{{servico.noticias[1].titulo}}</h2>
+                                                                                            </div>
+                                                                    <div class="box-texto">
+                                                                        <p>
+                                                                                {{servico.noticias[0].Texto.substring(0,100)}}
+                                                                        </p>
+                                                                    </div> 
+                                                                        <div class="box-texto">
+                                                                            <span> Saiba Mais</span>
+                                                                                </div>  
+                            </div><!--flex-->
+        </div><!---box-editorial-->  
+        
+       </div><!---center--> 
+    </section><!--box-editoriais-->

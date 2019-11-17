@@ -1,0 +1,14 @@
+
+<div class="slide center">
+<app-button-left-right setaDirecao=">"  (trocarImg)="onproximaImg($event)"class="position-right"></app-button-left-right>
+<app-button-left-right setaDirecao= "<"  (trocarImg)="onproximaImg($event)"class="position-left"></app-button-left-right>
+    <img [src]="imgAtual">
+
+    <div class="slide-btns">
+        <button type="button" (click)="essaImg(0)" id="1.jpg"  [style.background-color]="'0'==indice?'white':'red'"></button>
+        <button type="button" (click)="essaImg(1)" id=2.jpg   [style.background-color]=" '1'==indice?'white':'red'"></button>
+        <button type="button" (click)="essaImg(2)"id="3.jpg" [style.background-color]="'2'==indice?'white':'red'"></button>
+        <button type="button" (click)="essaImg(3)"id="4.jpg" [style.background-color]="'3'==indice?'white':'red'"></button>
+        <button type="button" (click)="essaImg(4)"id="5.jpg" [style.background-color]="'4'==indice?'white':'red'"></button>
+    </div>    
+</div>
