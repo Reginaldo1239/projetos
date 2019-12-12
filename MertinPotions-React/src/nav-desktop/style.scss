@@ -1,0 +1,56 @@
+@import '../Main.scss';
+
+section.menu-desktop{
+    background-color: $cor-segundaria;
+    display: block;
+    li{
+        float: left;
+        padding: 10px 15px;
+        list-style-type: none;
+      
+        a{
+            color:white;
+            text-decoration: none;
+            font-style: italic;
+            font-size: 20px;
+        }
+    }
+    .container{
+        width: 70%;
+    }
+    .container:nth-of-type(2){
+        width: 30%; 
+        .sub-container{
+            padding: 10px 10px;
+        }
+        a{
+            color:white;
+            font-size: 20px;
+         
+        }
+    }
+  .seta{
+      position: absolute;
+      top:50%;
+      transform: translate(0,-50%);
+      right: -5px;
+  }
+  .icoSeta{
+     
+      color: white;
+  }
+  .ativo{
+      background-color: purple;
+      margin-left:10px ;
+    
+ 
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+    section.menu-desktop{
+        display: none;
+    }
+
+}

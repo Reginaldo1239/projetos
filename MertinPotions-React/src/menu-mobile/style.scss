@@ -1,0 +1,62 @@
+@import '../Main.scss';
+.menu-mobile{
+    display: none;
+}
+
+
+@media  screen and (max-width:900px){
+
+    .menu-mobile{
+        background-color:$cor-segundaria ;   
+
+
+
+
+        display: block;
+        width: 100%;
+        min-height: 100%;
+        position: fixed;
+      
+        top:0;
+
+       .fechar-pesquisar{
+           padding: 10px 0;
+           background: white;
+           .icon-fechar{
+               width: 10%;
+               font-size: 40px;
+               text-align: center;
+               cursor: pointer;
+               color:$cor-segundaria
+           }
+           .pesquisar{
+               width: 90%;
+               input{
+                   width:90%;
+                   font-size: 30px;
+                   padding-left: 40px;
+                   padding-top: 5px;
+                   padding-bottom: 5px;
+               }
+               .lupa{
+                   position: absolute;
+                   top:20%;
+                   left: 5px;
+                  
+               }
+           }
+       }
+       
+     
+        li{
+            border-bottom: 1px solid white;
+           display: block;
+           padding: 20px 0;
+           a{
+               font-size: 40px;
+               margin-left: 100px;
+               color: white;
+           }
+        }
+    }
+}

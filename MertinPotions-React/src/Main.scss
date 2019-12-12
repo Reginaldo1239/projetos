@@ -1,0 +1,27 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+  
+  }
+  
+  
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .center{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  .relative{
+      position: relative;
+      display: inline-block;  }
+
+
+
+
+$cor-primaria:#ffa500;
+$cor-segundaria:#6804a0;
